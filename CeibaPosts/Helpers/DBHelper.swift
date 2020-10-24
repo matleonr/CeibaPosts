@@ -10,20 +10,20 @@ import Foundation
 import SQLite
 
 class DBHelper {
-    var postsDB: Connection!
+    var usersDB: Connection!
     var path: String = "CeibaPostsDB.sqlite3"
-    let postTable = Table("posts")
+    let usersTable = Table("users")
 
-    let userId = Expression<Int>("userId")
     let id = Expression<Int>("id")
-    let title = Expression<String>("title")
-    let body = Expression<String>("body")
-    let readed = Expression<String>("readed")
-    let favourite = Expression<String>("favourite")
+    let name = Expression<String>("name")
+    let username = Expression<String>("username")
+    let email = Expression<String>("email")
+    let phone = Expression<String>("phone")
+    let website = Expression<String>("website")
     
 
     init() {
-        postsDB = createDatabase()
+        usersDB = createDatabase()
         createTablePosts()
     }
 
@@ -41,146 +41,89 @@ class DBHelper {
     }
 
     func createTablePosts() {
-        let tableToCreate = postTable.create { table in
-            table.column(userId)
+        let tableToCreate = usersTable.create { table in
             table.column(id)
-            table.column(title)
-            table.column(body)
-            table.column(readed)
-            table.column(favourite)
+            table.column(name)
+            table.column(username)
+            table.column(email)
+            table.column(phone)
+            table.column(website)
         }
 
         do {
-            try postsDB.run(tableToCreate)
+            try usersDB.run(tableToCreate)
             print("table created hellyeah")
         } catch {
             print(error)
         }
     }
     
-    
-    func updateReaded(id: Int) {
-        let postFromDb = postTable.filter(self.id == id)
-        let postUpdate = postFromDb.update(readed <- "yes")
-        do {
-            try postsDB.run(postUpdate)
-            print("post updated")
-        } catch {
-            print(error)
-        }
-    }
-    
-    func updateFavourite(id: Int) {
-        let postFromDb = postTable.filter(self.id == id)
-        let postUpdate = postFromDb.update(favourite <- "yes")
-        do {
-            try postsDB.run(postUpdate)
-            print("post updated")
-        } catch {
-            print(error)
-        }
-    }
+
 
     
-    func postTableHasData() -> Bool {
+    func usersTableHasData() -> Bool {
         var validate = false
-        if getPosts().count > 0 {
+        if getUsers().count > 0 {
             validate = true
         }
         return validate
     }
     
-    func create(post: Post) {
-        let postToInsert = postTable.insert(id <- post.id!, userId <- post.userId!, title <- post.title!, body <- post.body!, readed <- post.readed!, favourite <- post.favourite!)
+    func create(user: User) {
+        let userToInsert = usersTable.insert(id <- user.id!,name <- user.name!,username <- user.username!, email <- user.email!, phone <- user.phone!, website <- user.website!)
+            
         do {
-            try postsDB.run(postToInsert)
+            try usersDB.run(userToInsert)
 
-            print("post registered successfully")
+            print("user registered successfully")
         } catch {
             print(error)
         }
     }
     
-    func getFavourites() -> [Post] {
-        var favouritePostsArray = [Post]()
-        let favouritePostsSelect = postTable.filter(favourite == "yes")
-        do {
-            let favourites = try postsDB.prepare(favouritePostsSelect)
-            for post in favourites {
-                let favouriteScoped = Post(userId: post[userId], id: post[id], title: post[title], body: post[body], readed: post[readed], favourite: post[favourite])
-                favouritePostsArray.append(favouriteScoped)
-            }
-            return favouritePostsArray
-        } catch  {
-            print(error)
-            return favouritePostsArray
-        }
-    }
+    
 
-    func getPosts() -> [Post] {
-        var postsArray = [Post]()
+    func getUsers() -> [User] {
+        var usersArray = [User]()
 
         do {
-            let posts = try postsDB.prepare(postTable)
+            let users = try usersDB.prepare(usersTable)
 
-            for post in posts {
+            for user in users {
                 
 
-                let postScoped = Post(userId: post[userId], id: post[id], title: post[title], body: post[body], readed: post[readed], favourite: post[favourite])
+                let userScoped = User(id: user[id], name: user[name], username: user[username], email: user[email], phone: user[phone], website: user[website])
+                    
+                
 
-                postsArray.append(postScoped)
+                usersArray.append(userScoped)
             }
-            return postsArray
+            return usersArray
         } catch {
             print(error)
-            return postsArray
+            return usersArray
         }
     }
 
-    func getPost(postId: Int) -> Post? {
-        let postFromDb = postTable.filter(id == postId)
-        var post: Post?
+    func getUser(usrId: Int) -> User? {
+        let userFromDb = usersTable.filter(id == usrId)
+        var user: User?
         do {
-            for postGetted in try postsDB.prepare(postFromDb) {
-                post = Post(userId: postGetted[userId], id: postGetted[id], title: postGetted[title], body: postGetted[body], readed: postGetted[readed], favourite: postGetted[favourite])
-                return post
+            for userGetted in try usersDB.prepare(userFromDb) {
+                user = User(id: userGetted[id], name: userGetted[name], username: userGetted[username], email: userGetted[email], phone: userGetted[phone], website: userGetted[website])
+                    
+                return user
             }
 
         } catch {
             print(error)
         }
-        return post
+        return user
     }
 
-    func update(post: Post) {
-        let postFromDb = postTable.filter(id == post.id!)
-        let postUpdate = postFromDb.update( userId <- post.userId!, title <- post.title!, body <- post.body!, readed <- post.readed!, favourite <- post.favourite!)
-        do {
-            try postsDB.run(postUpdate)
-            print("post updated")
-        } catch {
-            print(error)
-        }
-    }
+   
 
-    func delete(postId: Int) {
-        let postFromDb = postTable.filter(id == postId)
-        let postDelete = postFromDb.delete()
-        do {
-            try postsDB.run(postDelete)
-        } catch {
-            print(error)
-        }
-    }
+
     
-    func deleteAll() {
-        
-        let postDelete = postTable.delete()
-        do {
-            try postsDB.run(postDelete)
-        } catch {
-            print(error)
-        }
-        
-    }
+
 }

@@ -9,12 +9,30 @@
 /* Begin PBXBuildFile section */
 		43EFB6E16BC06B02B53C90C4 /* Pods_CeibaPostsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84B49CE93AC3487F28454E2 /* Pods_CeibaPostsTests.framework */; };
 		56C158862D4EFF3523DED74F /* Pods_CeibaPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F85555F1C4A03A3CB85764 /* Pods_CeibaPosts.framework */; };
+		9752A96B254497A500AB363C /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9752A96A254497A500AB363C /* UsersViewModel.swift */; };
+		9752A96C254497A500AB363C /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9752A96A254497A500AB363C /* UsersViewModel.swift */; };
+		9792D05D25448BEC000203E6 /* CeibaBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D05C25448BEC000203E6 /* CeibaBL.swift */; };
+		9792D05E25448BEC000203E6 /* CeibaBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D05C25448BEC000203E6 /* CeibaBL.swift */; };
+		9792D06025448C13000203E6 /* CeibaBLBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D05F25448C13000203E6 /* CeibaBLBehavior.swift */; };
+		9792D06125448C13000203E6 /* CeibaBLBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D05F25448C13000203E6 /* CeibaBLBehavior.swift */; };
+		9792D06325448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06225448CC6000203E6 /* CeibaRepositoryBehavior.swift */; };
+		9792D06425448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06225448CC6000203E6 /* CeibaRepositoryBehavior.swift */; };
+		9792D06625448D04000203E6 /* CeibaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06525448D04000203E6 /* CeibaRepository.swift */; };
+		9792D06725448D04000203E6 /* CeibaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06525448D04000203E6 /* CeibaRepository.swift */; };
+		9792D06925448DFC000203E6 /* UrlServicesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06825448DFC000203E6 /* UrlServicesHelper.swift */; };
+		9792D06A25448DFC000203E6 /* UrlServicesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9792D06825448DFC000203E6 /* UrlServicesHelper.swift */; };
 		97A4E5472544611200656A34 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E5462544611200656A34 /* DBHelper.swift */; };
 		97A4E5482544611200656A34 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E5462544611200656A34 /* DBHelper.swift */; };
 		97A4E54D254461EE00656A34 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E54C254461EE00656A34 /* Post.swift */; };
 		97A4E54E254461EE00656A34 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E54C254461EE00656A34 /* Post.swift */; };
 		97A4E5502544620800656A34 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E54F2544620800656A34 /* User.swift */; };
 		97A4E5512544620800656A34 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E54F2544620800656A34 /* User.swift */; };
+		97A4E5532544775F00656A34 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E5522544775F00656A34 /* UserCell.swift */; };
+		97A4E5542544775F00656A34 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E5522544775F00656A34 /* UserCell.swift */; };
+		97A4E559254479C200656A34 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E558254479C200656A34 /* ViewModelProtocol.swift */; };
+		97A4E55A254479C200656A34 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E558254479C200656A34 /* ViewModelProtocol.swift */; };
+		97A4E55D25447A7D00656A34 /* TypicodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E55C25447A7D00656A34 /* TypicodeApi.swift */; };
+		97A4E55E25447A7D00656A34 /* TypicodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E55C25447A7D00656A34 /* TypicodeApi.swift */; };
 		9A0F8C6C254296D300A4B63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6B254296D300A4B63A /* AppDelegate.swift */; };
 		9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */; };
 		9A0F8C70254296D300A4B63A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6F254296D300A4B63A /* ViewController.swift */; };
@@ -39,10 +57,19 @@
 		3B248E533FCE2E13F7FD3023 /* Pods-CeibaPosts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPosts.release.xcconfig"; path = "Target Support Files/Pods-CeibaPosts/Pods-CeibaPosts.release.xcconfig"; sourceTree = "<group>"; };
 		42F85555F1C4A03A3CB85764 /* Pods_CeibaPosts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPosts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7272DA97C801B616FD24A965 /* Pods-CeibaPosts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPosts.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPosts/Pods-CeibaPosts.debug.xcconfig"; sourceTree = "<group>"; };
+		9752A96A254497A500AB363C /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		9792D05C25448BEC000203E6 /* CeibaBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaBL.swift; sourceTree = "<group>"; };
+		9792D05F25448C13000203E6 /* CeibaBLBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaBLBehavior.swift; sourceTree = "<group>"; };
+		9792D06225448CC6000203E6 /* CeibaRepositoryBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaRepositoryBehavior.swift; sourceTree = "<group>"; };
+		9792D06525448D04000203E6 /* CeibaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaRepository.swift; sourceTree = "<group>"; };
+		9792D06825448DFC000203E6 /* UrlServicesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlServicesHelper.swift; sourceTree = "<group>"; };
 		97A4E5462544611200656A34 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		97A4E54C254461EE00656A34 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		97A4E54F2544620800656A34 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9A0F8C68254296D300A4B63A /* CeibaPosts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CeibaPosts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A4E5522544775F00656A34 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		97A4E558254479C200656A34 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		97A4E55C25447A7D00656A34 /* TypicodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeApi.swift; sourceTree = "<group>"; };
+		9A0F8C68254296D300A4B63A /* Ceiba Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ceiba Posts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F8C6B254296D300A4B63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9A0F8C6F254296D300A4B63A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				97A4E5462544611200656A34 /* DBHelper.swift */,
+				97A4E558254479C200656A34 /* ViewModelProtocol.swift */,
+				9792D06825448DFC000203E6 /* UrlServicesHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -118,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				9A0F8C6F254296D300A4B63A /* ViewController.swift */,
+				97A4E5522544775F00656A34 /* UserCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +155,7 @@
 		97A4E545254460D500656A34 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9752A96A254497A500AB363C /* UsersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -132,6 +163,8 @@
 		97A4E549254461A000656A34 /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				9792D05C25448BEC000203E6 /* CeibaBL.swift */,
+				9792D05F25448C13000203E6 /* CeibaBLBehavior.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -148,8 +181,19 @@
 		97A4E54B254461C100656A34 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				97A4E55B25447A3D00656A34 /* Api */,
+				9792D06225448CC6000203E6 /* CeibaRepositoryBehavior.swift */,
+				9792D06525448D04000203E6 /* CeibaRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		97A4E55B25447A3D00656A34 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				97A4E55C25447A7D00656A34 /* TypicodeApi.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		9A0F8C5F254296D300A4B63A = {
@@ -166,7 +210,7 @@
 		9A0F8C69254296D300A4B63A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A0F8C68254296D300A4B63A /* CeibaPosts.app */,
+				9A0F8C68254296D300A4B63A /* Ceiba Posts.app */,
 				9A0F8C7E254296D500A4B63A /* CeibaPostsTests.xctest */,
 			);
 			name = Products;
@@ -234,7 +278,7 @@
 			);
 			name = CeibaPosts;
 			productName = CeibaPosts;
-			productReference = 9A0F8C68254296D300A4B63A /* CeibaPosts.app */;
+			productReference = 9A0F8C68254296D300A4B63A /* Ceiba Posts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9A0F8C7D254296D500A4B63A /* CeibaPostsTests */ = {
@@ -402,11 +446,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0F8C70254296D300A4B63A /* ViewController.swift in Sources */,
+				9792D06925448DFC000203E6 /* UrlServicesHelper.swift in Sources */,
+				97A4E55D25447A7D00656A34 /* TypicodeApi.swift in Sources */,
+				9792D06025448C13000203E6 /* CeibaBLBehavior.swift in Sources */,
+				9752A96B254497A500AB363C /* UsersViewModel.swift in Sources */,
 				9A0F8C6C254296D300A4B63A /* AppDelegate.swift in Sources */,
 				97A4E5502544620800656A34 /* User.swift in Sources */,
 				9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */,
 				97A4E5472544611200656A34 /* DBHelper.swift in Sources */,
 				97A4E54D254461EE00656A34 /* Post.swift in Sources */,
+				9792D06625448D04000203E6 /* CeibaRepository.swift in Sources */,
+				9792D06325448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
+				97A4E5532544775F00656A34 /* UserCell.swift in Sources */,
+				9792D05D25448BEC000203E6 /* CeibaBL.swift in Sources */,
+				97A4E559254479C200656A34 /* ViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,9 +468,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A4E5512544620800656A34 /* User.swift in Sources */,
+				9752A96C254497A500AB363C /* UsersViewModel.swift in Sources */,
 				97A4E54E254461EE00656A34 /* Post.swift in Sources */,
+				9792D06725448D04000203E6 /* CeibaRepository.swift in Sources */,
+				9792D06425448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
+				9792D05E25448BEC000203E6 /* CeibaBL.swift in Sources */,
 				9A0F8C83254296D500A4B63A /* CeibaPostsTests.swift in Sources */,
+				97A4E55A254479C200656A34 /* ViewModelProtocol.swift in Sources */,
+				9792D06125448C13000203E6 /* CeibaBLBehavior.swift in Sources */,
+				97A4E5542544775F00656A34 /* UserCell.swift in Sources */,
+				9792D06A25448DFC000203E6 /* UrlServicesHelper.swift in Sources */,
 				97A4E5482544611200656A34 /* DBHelper.swift in Sources */,
+				97A4E55E25447A7D00656A34 /* TypicodeApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +639,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MattDeveloper.CeibaPosts;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ceiba Posts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -595,7 +657,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MattDeveloper.CeibaPosts;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Ceiba Posts";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
