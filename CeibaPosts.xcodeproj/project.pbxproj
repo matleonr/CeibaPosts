@@ -40,6 +40,10 @@
 		9A0F8C75254296D500A4B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F8C74254296D500A4B63A /* Assets.xcassets */; };
 		9A0F8C78254296D500A4B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F8C76254296D500A4B63A /* LaunchScreen.storyboard */; };
 		9A0F8C83254296D500A4B63A /* CeibaPostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C82254296D500A4B63A /* CeibaPostsTests.swift */; };
+		9A0F8C922544C90100A4B63A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C912544C90100A4B63A /* DetailViewController.swift */; };
+		9A0F8C932544C90100A4B63A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C912544C90100A4B63A /* DetailViewController.swift */; };
+		9A0F8C952544D60500A4B63A /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* postCell.swift */; };
+		9A0F8C962544D60500A4B63A /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* postCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,8 @@
 		9A0F8C7E254296D500A4B63A /* CeibaPostsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CeibaPostsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F8C82254296D500A4B63A /* CeibaPostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaPostsTests.swift; sourceTree = "<group>"; };
 		9A0F8C84254296D500A4B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0F8C912544C90100A4B63A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A0F8C942544D60500A4B63A /* postCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
 		B84B49CE93AC3487F28454E2 /* Pods_CeibaPostsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPostsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA3153CF7F0931E7252CA40 /* Pods-CeibaPostsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPostsTests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPostsTests/Pods-CeibaPostsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +154,8 @@
 			children = (
 				9A0F8C6F254296D300A4B63A /* ViewController.swift */,
 				97A4E5522544775F00656A34 /* UserCell.swift */,
+				9A0F8C912544C90100A4B63A /* DetailViewController.swift */,
+				9A0F8C942544D60500A4B63A /* postCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -452,9 +460,11 @@
 				9752A96B254497A500AB363C /* UsersViewModel.swift in Sources */,
 				9A0F8C6C254296D300A4B63A /* AppDelegate.swift in Sources */,
 				97A4E5502544620800656A34 /* User.swift in Sources */,
+				9A0F8C922544C90100A4B63A /* DetailViewController.swift in Sources */,
 				9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */,
 				97A4E5472544611200656A34 /* DBHelper.swift in Sources */,
 				97A4E54D254461EE00656A34 /* Post.swift in Sources */,
+				9A0F8C952544D60500A4B63A /* postCell.swift in Sources */,
 				9792D06625448D04000203E6 /* CeibaRepository.swift in Sources */,
 				9792D06325448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
 				97A4E5532544775F00656A34 /* UserCell.swift in Sources */,
@@ -471,6 +481,7 @@
 				9752A96C254497A500AB363C /* UsersViewModel.swift in Sources */,
 				97A4E54E254461EE00656A34 /* Post.swift in Sources */,
 				9792D06725448D04000203E6 /* CeibaRepository.swift in Sources */,
+				9A0F8C962544D60500A4B63A /* postCell.swift in Sources */,
 				9792D06425448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
 				9792D05E25448BEC000203E6 /* CeibaBL.swift in Sources */,
 				9A0F8C83254296D500A4B63A /* CeibaPostsTests.swift in Sources */,
@@ -480,6 +491,7 @@
 				9792D06A25448DFC000203E6 /* UrlServicesHelper.swift in Sources */,
 				97A4E5482544611200656A34 /* DBHelper.swift in Sources */,
 				97A4E55E25447A7D00656A34 /* TypicodeApi.swift in Sources */,
+				9A0F8C932544C90100A4B63A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
