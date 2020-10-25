@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var users: [User] = []
     var filteredUsers = [User]()
     var searching = false
+    var alert = UIAlertController()
 
     @IBOutlet weak var userSearchBar: UISearchBar!
     @IBOutlet weak var usersTableView: UITableView!
@@ -39,6 +40,28 @@ class ViewController: UIViewController {
         
     }
     
+    func showAlert(message:String) {
+        alert = UIAlertController(title: message,
+                                                message: nil,
+                                                preferredStyle: .alert)
+        present(alert, animated: true){
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+            self.alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
+    }
+    
+    func dismissAlert() {
+        alert.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func dismissAlertController(){
+        userSearchBar.searchTextField.text = ""
+        searching=false
+        usersTableView.reloadData()
+        self.dismiss(animated: true, completion: nil)
+        userSearchBar.endEditing(true)
+    }
+    
     func bind() {
         usersViewModel.output.users.asObservable().subscribe(
         onNext: { users in
@@ -49,6 +72,15 @@ class ViewController: UIViewController {
             }
 
         }).disposed(by: disposeBag)
+        usersViewModel.output.loading.asObservable().subscribe(
+            onNext: { loading in
+                if loading ?? false {
+                    self.showAlert(message: "Obteniendo informacion...")
+                }else{
+                    self.dismissAlert()
+                }
+            
+            }).disposed(by: disposeBag)
     }
     
     func cleanTable() {
@@ -82,6 +114,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if searching{
+            if filteredUsers.count == 0 {
+                self.showAlert(message: "List is empty")
+            }
             return filteredUsers.count
         }else{
             return users.count

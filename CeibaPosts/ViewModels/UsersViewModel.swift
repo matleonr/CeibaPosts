@@ -23,6 +23,7 @@ class UsersViewModel : ViewModelProtocol{
     
     struct Output {
         var users = BehaviorRelay<[User]?>(value: nil)
+        var loading = BehaviorRelay<Bool?>(value: false)
     }
 
     let input: Input
@@ -44,15 +45,16 @@ class UsersViewModel : ViewModelProtocol{
     }
     
     func bind() {
-    input.viewShown.subscribe(onNext: { shown in
+        output.loading.accept(true)
+        input.viewShown.subscribe(onNext: { shown in
 
-        if shown ?? false {
-            if !self.usersDB.usersTableHasData() {
-                self.getUsersFromApi()
-            }
+            if shown ?? false {
+                if !self.usersDB.usersTableHasData() {
+                    self.getUsersFromApi()
+                }
             
-            self.showUsers()
-        }
+                self.showUsers()
+            }
 
         }).disposed(by: disposeBag)
         
@@ -80,5 +82,6 @@ class UsersViewModel : ViewModelProtocol{
     
     func showUsers() {
         output.users.accept(usersDB.getUsers())
+        output.loading.accept(false)
     }
 }
