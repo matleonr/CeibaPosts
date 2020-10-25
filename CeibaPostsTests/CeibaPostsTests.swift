@@ -75,6 +75,7 @@ class CeibaPostsTests: XCTestCase {
         let fakeUsers = createUsers()
         
         XCTAssert(usersGetted![0] == fakeUsers[0])
+        viewModel.deleteDB()
     }
     
     func testGetPosts()  {
