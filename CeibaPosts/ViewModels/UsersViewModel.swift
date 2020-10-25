@@ -34,7 +34,9 @@ class UsersViewModel : ViewModelProtocol{
         input = Input()
         output = Output()
         self.ceibaBl = ceibaBL
+        deleteDB()
         bind()
+        
     }
 
     init() {
@@ -83,5 +85,9 @@ class UsersViewModel : ViewModelProtocol{
     func showUsers() {
         output.users.accept(usersDB.getUsers())
         output.loading.accept(false)
+    }
+    
+    func deleteDB() {
+        self.usersDB.deleteAll()
     }
 }

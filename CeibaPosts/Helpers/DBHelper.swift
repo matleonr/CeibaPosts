@@ -122,7 +122,16 @@ class DBHelper {
     }
 
    
-
+    func deleteAll() {
+        
+        let usersDelete = usersTable.delete()
+        do {
+            try usersDB.run(usersDelete)
+        } catch {
+            print(error)
+        }
+        
+    }
 
     
 

@@ -24,7 +24,7 @@ class CeibaRepository: CeibaRepositoryBehavior {
                     return Observable.just(resultGetUsers)
                 }
             } else {
-                let error = NSError(domain: "Error napoleonApi", code: Response.statusCode, userInfo: ["Error": Response.statusCode.description])
+                let error = NSError(domain: "Error CeibaApi", code: Response.statusCode, userInfo: ["Error": Response.statusCode.description])
                 return Observable.error(error)
             }
         })
@@ -40,7 +40,7 @@ class CeibaRepository: CeibaRepositoryBehavior {
                     return Observable.just(resultGetPosts)
                 }
             } else {
-                let error = NSError(domain: "Error napoleonApi", code: Response.statusCode, userInfo: ["Error": Response.statusCode.description])
+                let error = NSError(domain: "Error CeibaApi", code: Response.statusCode, userInfo: ["Error": Response.statusCode.description])
                 return Observable.error(error)
             }
 
