@@ -17,7 +17,7 @@ target 'CeibaPosts' do
     
     pod 'RxSwift', '~> 5.1'
     pod 'RxCocoa', '~> 5'
-    #pod 'RxTest', '~> 5.1'
+    pod 'RxTest', '~> 5.1'
     pod 'Moya/RxSwift', '~> 14.0'
     pod 'Alamofire', '~> 5.0'
     pod 'SQLite.swift', '~> 0.12.0'

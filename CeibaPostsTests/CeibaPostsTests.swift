@@ -7,7 +7,10 @@
 //
 
 import XCTest
-@testable import CeibaPosts
+import RxSwift
+import RxTest
+import RxCocoa
+@testable import Ceiba_Posts
 
 class CeibaPostsTests: XCTestCase {
 
