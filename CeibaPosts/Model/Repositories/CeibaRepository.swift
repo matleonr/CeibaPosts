@@ -30,4 +30,21 @@ class CeibaRepository: CeibaRepositoryBehavior {
         })
     }
     
+    func getPosts(id: String) throws -> Observable<[Post]> {
+        return ceibaApi.rx.request(CeibaApi.getPosts(id: id)).asObservable().flatMap({ Response -> Observable<[Post]> in
+
+            if Response.statusCode == 200 {
+                do {
+                    let decoder = JSONDecoder()
+                    let resultGetPosts = try decoder.decode([Post].self, from: Response.data)
+                    return Observable.just(resultGetPosts)
+                }
+            } else {
+                let error = NSError(domain: "Error napoleonApi", code: Response.statusCode, userInfo: ["Error": Response.statusCode.description])
+                return Observable.error(error)
+            }
+
+        })
+    }
+    
 }

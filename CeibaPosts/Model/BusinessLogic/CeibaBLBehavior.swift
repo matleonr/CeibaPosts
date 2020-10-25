@@ -10,6 +10,6 @@ import Foundation
 import RxSwift
 
 protocol CeibaBLBehavior {
-    //func getPosts(id: String) throws -> Observable<[Post]>
+    func getPosts(id: String) throws -> Observable<[Post]>
     func getUsers() throws -> Observable<[User]>
 }

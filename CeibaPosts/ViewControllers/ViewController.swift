@@ -60,6 +60,15 @@ class ViewController: UIViewController {
         usersTableView.insertRows(at: [indexPath], with: .automatic)
         usersTableView.endUpdates()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "UserPosts" {
+            let postsVC = segue.destination as! DetailViewController
+            postsVC.user = sender as? User
+        }
+        
+        
+    }
 
 
 }
@@ -78,8 +87,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let user = users[indexPath.row]
-        
+        let user = users[indexPath.row]
+        performSegue(withIdentifier: "UserPosts", sender: user)
         
     }
 }

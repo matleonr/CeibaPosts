@@ -33,6 +33,8 @@
 		97A4E55A254479C200656A34 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E558254479C200656A34 /* ViewModelProtocol.swift */; };
 		97A4E55D25447A7D00656A34 /* TypicodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E55C25447A7D00656A34 /* TypicodeApi.swift */; };
 		97A4E55E25447A7D00656A34 /* TypicodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E55C25447A7D00656A34 /* TypicodeApi.swift */; };
+		97CE986C2544E7E100814F72 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */; };
+		97CE986D2544E7E100814F72 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */; };
 		9A0F8C6C254296D300A4B63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6B254296D300A4B63A /* AppDelegate.swift */; };
 		9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */; };
 		9A0F8C70254296D300A4B63A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6F254296D300A4B63A /* ViewController.swift */; };
@@ -42,8 +44,8 @@
 		9A0F8C83254296D500A4B63A /* CeibaPostsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C82254296D500A4B63A /* CeibaPostsTests.swift */; };
 		9A0F8C922544C90100A4B63A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C912544C90100A4B63A /* DetailViewController.swift */; };
 		9A0F8C932544C90100A4B63A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C912544C90100A4B63A /* DetailViewController.swift */; };
-		9A0F8C952544D60500A4B63A /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* postCell.swift */; };
-		9A0F8C962544D60500A4B63A /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* postCell.swift */; };
+		9A0F8C952544D60500A4B63A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* PostCell.swift */; };
+		9A0F8C962544D60500A4B63A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C942544D60500A4B63A /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 		97A4E5522544775F00656A34 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		97A4E558254479C200656A34 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		97A4E55C25447A7D00656A34 /* TypicodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeApi.swift; sourceTree = "<group>"; };
+		97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewModel.swift; sourceTree = "<group>"; };
 		9A0F8C68254296D300A4B63A /* Ceiba Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ceiba Posts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F8C6B254296D300A4B63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +88,7 @@
 		9A0F8C82254296D500A4B63A /* CeibaPostsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeibaPostsTests.swift; sourceTree = "<group>"; };
 		9A0F8C84254296D500A4B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0F8C912544C90100A4B63A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		9A0F8C942544D60500A4B63A /* postCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
+		9A0F8C942544D60500A4B63A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B84B49CE93AC3487F28454E2 /* Pods_CeibaPostsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CeibaPostsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA3153CF7F0931E7252CA40 /* Pods-CeibaPostsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CeibaPostsTests.debug.xcconfig"; path = "Target Support Files/Pods-CeibaPostsTests/Pods-CeibaPostsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +158,7 @@
 				9A0F8C6F254296D300A4B63A /* ViewController.swift */,
 				97A4E5522544775F00656A34 /* UserCell.swift */,
 				9A0F8C912544C90100A4B63A /* DetailViewController.swift */,
-				9A0F8C942544D60500A4B63A /* postCell.swift */,
+				9A0F8C942544D60500A4B63A /* PostCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				9752A96A254497A500AB363C /* UsersViewModel.swift */,
+				97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -464,12 +468,13 @@
 				9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */,
 				97A4E5472544611200656A34 /* DBHelper.swift in Sources */,
 				97A4E54D254461EE00656A34 /* Post.swift in Sources */,
-				9A0F8C952544D60500A4B63A /* postCell.swift in Sources */,
+				9A0F8C952544D60500A4B63A /* PostCell.swift in Sources */,
 				9792D06625448D04000203E6 /* CeibaRepository.swift in Sources */,
 				9792D06325448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
 				97A4E5532544775F00656A34 /* UserCell.swift in Sources */,
 				9792D05D25448BEC000203E6 /* CeibaBL.swift in Sources */,
 				97A4E559254479C200656A34 /* ViewModelProtocol.swift in Sources */,
+				97CE986C2544E7E100814F72 /* UserPostsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,9 +486,10 @@
 				9752A96C254497A500AB363C /* UsersViewModel.swift in Sources */,
 				97A4E54E254461EE00656A34 /* Post.swift in Sources */,
 				9792D06725448D04000203E6 /* CeibaRepository.swift in Sources */,
-				9A0F8C962544D60500A4B63A /* postCell.swift in Sources */,
+				9A0F8C962544D60500A4B63A /* PostCell.swift in Sources */,
 				9792D06425448CC6000203E6 /* CeibaRepositoryBehavior.swift in Sources */,
 				9792D05E25448BEC000203E6 /* CeibaBL.swift in Sources */,
+				97CE986D2544E7E100814F72 /* UserPostsViewModel.swift in Sources */,
 				9A0F8C83254296D500A4B63A /* CeibaPostsTests.swift in Sources */,
 				97A4E55A254479C200656A34 /* ViewModelProtocol.swift in Sources */,
 				9792D06125448C13000203E6 /* CeibaBLBehavior.swift in Sources */,

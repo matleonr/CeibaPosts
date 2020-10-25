@@ -27,5 +27,12 @@ class CeibaBL: CeibaBLBehavior {
             Observable.just(response)
         })
     }
+    
+    func getPosts(id: String) throws -> Observable<[Post]> {
+        return try ceibaRepository.getPosts(id: id).asObservable().flatMap({
+            response -> Observable<[Post]> in
+            Observable.just(response)
+        })
+    }
 
 }

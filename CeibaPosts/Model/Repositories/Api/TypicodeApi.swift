@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 public enum CeibaApi{
-    //case getPosts(id: String)
+    case getPosts(id: String)
     case getUsers
 }
 
@@ -24,13 +24,16 @@ extension CeibaApi : TargetType{
         switch self {
         case .getUsers:
             return UrlServicesHelper.getUsers.description
-        
+        case .getPosts:
+            return UrlServicesHelper.getPosts.description
         }
     }
     
     public var method: Moya.Method {
         switch self {
         case .getUsers:
+            return .get
+        case .getPosts:
             return .get
         }
     }
@@ -39,6 +42,8 @@ extension CeibaApi : TargetType{
         switch self {
         case .getUsers:
             return Data()
+        case .getPosts:
+            return Data()
         }
     }
     
@@ -46,6 +51,9 @@ extension CeibaApi : TargetType{
         switch self {
         case .getUsers:
             return .requestPlain
+            
+        case .getPosts(let id):
+            return .requestParameters(parameters: ["userId": id], encoding: URLEncoding.queryString)
         }
     }
     
@@ -54,6 +62,8 @@ extension CeibaApi : TargetType{
         case .getUsers:
             return nil
         
+        case .getPosts:
+            return nil
         }
     }
     
