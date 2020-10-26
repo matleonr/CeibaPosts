@@ -38,6 +38,16 @@
                ReferencedContainer = "container:CeibaPosts.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "97CE987A25463B2800814F72"
+               BuildableName = "Ceiba PostsUITests.xctest"
+               BlueprintName = "Ceiba PostsUITests"
+               ReferencedContainer = "container:CeibaPosts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

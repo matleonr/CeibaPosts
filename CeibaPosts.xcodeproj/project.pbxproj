@@ -34,6 +34,7 @@
 		97A4E55E25447A7D00656A34 /* TypicodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A4E55C25447A7D00656A34 /* TypicodeApi.swift */; };
 		97CE986C2544E7E100814F72 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */; };
 		97CE986D2544E7E100814F72 /* UserPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */; };
+		97CE987E25463B2800814F72 /* Ceiba_PostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE987D25463B2800814F72 /* Ceiba_PostsUITests.swift */; };
 		9A0F8C6C254296D300A4B63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6B254296D300A4B63A /* AppDelegate.swift */; };
 		9A0F8C6E254296D300A4B63A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */; };
 		9A0F8C70254296D300A4B63A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F8C6F254296D300A4B63A /* ViewController.swift */; };
@@ -49,6 +50,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		97CE988025463B2800814F72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A0F8C60254296D300A4B63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A0F8C67254296D300A4B63A;
+			remoteInfo = CeibaPosts;
+		};
 		9A0F8C7F254296D500A4B63A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A0F8C60254296D300A4B63A /* Project object */;
@@ -76,6 +84,9 @@
 		97A4E558254479C200656A34 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		97A4E55C25447A7D00656A34 /* TypicodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeApi.swift; sourceTree = "<group>"; };
 		97CE986B2544E7E100814F72 /* UserPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewModel.swift; sourceTree = "<group>"; };
+		97CE987B25463B2800814F72 /* Ceiba PostsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ceiba PostsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CE987D25463B2800814F72 /* Ceiba_PostsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ceiba_PostsUITests.swift; sourceTree = "<group>"; };
+		97CE987F25463B2800814F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A0F8C68254296D300A4B63A /* Ceiba Posts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ceiba Posts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0F8C6B254296D300A4B63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0F8C6D254296D300A4B63A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +105,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		97CE987825463B2800814F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A0F8C65254296D300A4B63A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,11 +226,21 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		97CE987C25463B2800814F72 /* Ceiba PostsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97CE987D25463B2800814F72 /* Ceiba_PostsUITests.swift */,
+				97CE987F25463B2800814F72 /* Info.plist */,
+			);
+			path = "Ceiba PostsUITests";
+			sourceTree = "<group>";
+		};
 		9A0F8C5F254296D300A4B63A = {
 			isa = PBXGroup;
 			children = (
 				9A0F8C6A254296D300A4B63A /* CeibaPosts */,
 				9A0F8C81254296D500A4B63A /* CeibaPostsTests */,
+				97CE987C25463B2800814F72 /* Ceiba PostsUITests */,
 				9A0F8C69254296D300A4B63A /* Products */,
 				A2C1A91E9AD4F7AAA9F73B4C /* Pods */,
 				AB973DE30D44FFE8AF44E476 /* Frameworks */,
@@ -224,6 +252,7 @@
 			children = (
 				9A0F8C68254296D300A4B63A /* Ceiba Posts.app */,
 				9A0F8C7E254296D500A4B63A /* CeibaPostsTests.xctest */,
+				97CE987B25463B2800814F72 /* Ceiba PostsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +303,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		97CE987A25463B2800814F72 /* Ceiba PostsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97CE988425463B2800814F72 /* Build configuration list for PBXNativeTarget "Ceiba PostsUITests" */;
+			buildPhases = (
+				97CE987725463B2800814F72 /* Sources */,
+				97CE987825463B2800814F72 /* Frameworks */,
+				97CE987925463B2800814F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97CE988125463B2800814F72 /* PBXTargetDependency */,
+			);
+			name = "Ceiba PostsUITests";
+			productName = "Ceiba PostsUITests";
+			productReference = 97CE987B25463B2800814F72 /* Ceiba PostsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9A0F8C67254296D300A4B63A /* CeibaPosts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A0F8C87254296D500A4B63A /* Build configuration list for PBXNativeTarget "CeibaPosts" */;
@@ -319,10 +366,14 @@
 		9A0F8C60254296D300A4B63A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Matt Leon";
 				TargetAttributes = {
+					97CE987A25463B2800814F72 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 9A0F8C67254296D300A4B63A;
+					};
 					9A0F8C67254296D300A4B63A = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -347,11 +398,19 @@
 			targets = (
 				9A0F8C67254296D300A4B63A /* CeibaPosts */,
 				9A0F8C7D254296D500A4B63A /* CeibaPostsTests */,
+				97CE987A25463B2800814F72 /* Ceiba PostsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		97CE987925463B2800814F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A0F8C66254296D300A4B63A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +512,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		97CE987725463B2800814F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CE987E25463B2800814F72 /* Ceiba_PostsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A0F8C64254296D300A4B63A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +571,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		97CE988125463B2800814F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A0F8C67254296D300A4B63A /* CeibaPosts */;
+			targetProxy = 97CE988025463B2800814F72 /* PBXContainerItemProxy */;
+		};
 		9A0F8C80254296D500A4B63A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9A0F8C67254296D300A4B63A /* CeibaPosts */;
@@ -531,6 +603,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		97CE988225463B2800814F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39399Y9GVT;
+				INFOPLIST_FILE = "Ceiba PostsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MLR3312.Ceiba-PostsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaPosts;
+			};
+			name = Debug;
+		};
+		97CE988325463B2800814F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39399Y9GVT;
+				INFOPLIST_FILE = "Ceiba PostsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MLR3312.Ceiba-PostsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CeibaPosts;
+			};
+			name = Release;
+		};
 		9A0F8C85254296D500A4B63A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -581,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -635,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -652,6 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CeibaPosts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -670,6 +783,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CeibaPosts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -728,6 +842,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		97CE988425463B2800814F72 /* Build configuration list for PBXNativeTarget "Ceiba PostsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97CE988225463B2800814F72 /* Debug */,
+				97CE988325463B2800814F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9A0F8C63254296D300A4B63A /* Build configuration list for PBXProject "CeibaPosts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

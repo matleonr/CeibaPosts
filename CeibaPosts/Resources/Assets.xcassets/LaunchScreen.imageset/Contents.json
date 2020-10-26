@@ -1,8 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "Captura de Pantalla 2020-10-24 a la(s) 1.57.03 p. m..pdf",
-      "idiom" : "universal"
+      "filename" : "Componente 3 – 1.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Componente 3 – 1@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Componente 3 – 1@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
     }
   ],
   "info" : {
